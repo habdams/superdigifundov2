@@ -18,6 +18,7 @@
         "@nivo/bar": "^0.79.1",
         "@nivo/bump": "^0.79.1",
         "@nivo/circle-packing": "^0.79.1",
+        "@nivo/core": "^0.79.0",
         "@nivo/pie": "^0.79.1",
         "@progress/kendo-drawing": "^1.16.3",
         "@progress/kendo-licensing": "^1.2.2",
