@@ -1,13 +1,11 @@
 import type { ReactElement } from "react";
+import Link from 'next/link';
 import Layout from "../components/layout";
 import searchIcon from "../utils/search-icon.svg";
 import Image from "next/image";
 import { Menu } from "@headlessui/react";
 import { ChevronRightIcon } from "@heroicons/react/solid";
-import { userSelector } from "../features/authReducer";
-import { useSelector } from "react-redux";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -812,20 +810,23 @@ const Forderungsantrage = () => {
                 >
                     {projects.map((project) => (
                         <li key={project.id} className="">
-                            <a
-                                href="/antragsliste"
-                                className="group flex items-center justify-between px-4 py-4 hover:bg-gray-50 sm:px-6"
-                            >
-                                <span className="flex items-center truncate space-x-3">
-                                    <span className="font-medium truncate text-sm leading-6">
-                                        {project.Aktenzeichen}
+
+                            <Link href="/antragsliste">
+
+                                <a
+                                    className="group flex items-center justify-between px-4 py-4 hover:bg-gray-50 sm:px-6"
+                                >
+                                    <span className="flex items-center truncate space-x-3">
+                                        <span className="font-medium truncate text-sm leading-6">
+                                            {project.Aktenzeichen}
+                                        </span>
                                     </span>
-                                </span>
-                                <ChevronRightIcon
-                                    className="ml-4 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                    aria-hidden="true"
-                                />
-                            </a>
+                                    <ChevronRightIcon
+                                        className="ml-4 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                                        aria-hidden="true"
+                                    />
+                                </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -874,14 +875,15 @@ const Forderungsantrage = () => {
                                 >
                                     <td className="px-6 py-3 max-w-0 w-1/5 whitespace-nowrap text-sm font-medium text-gray-900 text-left">
                                         <div className="flex items-center space-x-3 lg:pl-2">
-                                            <a
-                                                href="/antragsliste"
-                                                className=" hover:text-gray-600"
-                                            >
-                                                <span>
-                                                    {project.Aktenzeichen}
-                                                </span>
-                                            </a>
+
+                                            <Link href="/antragsliste">
+                                                <a className=" hover:text-gray-600">
+                                                    <span>
+                                                        {project.Aktenzeichen}
+                                                    </span>
+                                                </a>
+                                            </Link>
+
                                         </div>
                                     </td>
                                     <td className="hidden md:table-cell w-1/5 px-6 py-3 whitespace-nowrap text-sm text-gray-500 text-left">
