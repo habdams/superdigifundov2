@@ -1,16 +1,8 @@
 import Link from "next/link";
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 const NotFound = () => {
     const router = useRouter();
-
-    useEffect(() => {
-        setTimeout(() => {
-            // router.go(-1) - this takes the user forward or backward in browsing history
-            router.push("/");
-        }, 5000);
-    }, []);
 
     return (
         <div className="flex justify-center">
@@ -19,7 +11,7 @@ const NotFound = () => {
                 <h2 className="text-lg">That page could not be found</h2>
 
                 <div className="my-4">
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <button className="w-full flex justify-center py-2 px-4 rounded-md shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
                             {" "}
                             home{" "}

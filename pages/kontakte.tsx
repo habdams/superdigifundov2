@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect, ReactElement } from "react";
+import { ReactElement } from "react";
 import Layout from "../components/layout";
 import {
     ArrowNarrowLeftIcon,
@@ -8,9 +8,6 @@ import {
     SearchIcon,
 } from "@heroicons/react/solid";
 import { ChevronLeftIcon, FilterIcon } from "@heroicons/react/solid";
-import { userSelector } from "../features/authReducer";
-import { useSelector } from "react-redux";
-import { useRouter } from "next/router";
 
 const profile = {
     name: "Sabina Olger",
@@ -84,7 +81,6 @@ function classNames(...classes) {
 }
 
 const Kontakte = () => {
-    const [selected, setSelected] = useState(publishingOptions[0]);
 
     return (
         <>

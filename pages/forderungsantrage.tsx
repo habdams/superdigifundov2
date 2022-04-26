@@ -661,6 +661,7 @@ const Forderungsantrage = () => {
                             <Image
                                 src={searchIcon}
                                 className="px-2 text-pink-400 text-sm items-center "
+                                alt="search icon"
                             />
                         </div>
                     </div>
@@ -811,7 +812,7 @@ const Forderungsantrage = () => {
                     {projects.map((project) => (
                         <li key={project.id} className="">
 
-                            <Link href="/antragsliste">
+                            <Link href="/antragsliste" passHref>
 
                                 <a
                                     className="group flex items-center justify-between px-4 py-4 hover:bg-gray-50 sm:px-6"

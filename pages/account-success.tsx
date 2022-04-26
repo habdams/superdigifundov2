@@ -1,25 +1,15 @@
 import Link from "next/link";
-import { useEffect } from "react";
 import Image from "next/image";
-import { userSelector } from "../features/authReducer";
-import { useSelector } from "react-redux";
-import { useRouter } from "next/router";
+
 
 const AccountSuccess = () => {
-    const history = useRouter();
-    const { isAuthenticated } = useSelector(userSelector);
-    useEffect(() => {
-        console.log(isAuthenticated);
-        if (!isAuthenticated) {
-            history.push("/");
-        }
-    }, []);
+
     return (
         <div className="min-h-full ">
             <div className="flex flex-row min-w-full">
                 <div className="flex-1 flex justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 w-1/2">
                     <div className="mx-auto w-full max-w-sm lg flex flex-col justify-center items-center">
-                        <Image src={"/logo.png"} width={320} height={65} />
+                        <Image src={"/logo.png"} width={320} height={65} alt="logo" />
 
                         <div className="my-8 text-center text-xl">
                             <p className="text-gray-500 ">
@@ -44,7 +34,7 @@ const AccountSuccess = () => {
                         </div>
 
                         <div>
-                            <Link href="/forderungsantrage">
+                            <Link href="/forderungsantrage" passHref>
                                 <button
                                     type="submit"
                                     className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:pink-sky-500"

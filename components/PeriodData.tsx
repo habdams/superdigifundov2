@@ -23,7 +23,7 @@ export const PeriodData = (props) => {
                 </div>
 
                 {records.map((record, index) => (
-                    <>
+                    <div key={index}>
                         <div key={index} className="flex justify-between items-center mb-2 gap-x-2 text-gray-700">
                             <div className="w-4/5 flex justify-between items-center p-2 bg-slate-100">
                                 <span>{record.item}</span>
@@ -48,7 +48,7 @@ export const PeriodData = (props) => {
                                 </span>
                             </div>
                         </div>
-                    </>
+                    </div>
                 ))}
 
                 <div className="p-2 text-lg font-bold bg-slate-100 text-pink-700 mb-12 w-4/5 flex items-center justify-between">
