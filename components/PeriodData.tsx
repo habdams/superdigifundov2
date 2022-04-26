@@ -24,7 +24,7 @@ export const PeriodData = (props) => {
 
                 {records.map((record, index) => (
                     <>
-                        <div className="flex justify-between items-center mb-2 gap-x-2 text-gray-700">
+                        <div key={index} className="flex justify-between items-center mb-2 gap-x-2 text-gray-700">
                             <div className="w-4/5 flex justify-between items-center p-2 bg-slate-100">
                                 <span>{record.item}</span>
                                 <span>{record.amount}</span>

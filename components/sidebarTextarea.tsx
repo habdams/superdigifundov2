@@ -76,7 +76,6 @@ export default function SidebarTextarea(props) {
                             id="comment"
                             className="block w-full py-3 border-0 focus:ring-0 sm:text-xs text-sm text-zinc-800 font-sans font-medium"
                             placeholder="Klicken Sie hier um eine Notizt zu schreiben..."
-                            defaultValue={""}
                             value={props.noteState}
                             onChange={props.onChangeNote}
                         />
@@ -106,7 +105,7 @@ export default function SidebarTextarea(props) {
                                                 <Listbox.Button className="relative -m-2.5 w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-500">
                                                     <span className="flex items-center justify-center">
                                                         {selected.value ===
-                                                        null ? (
+                                                            null ? (
                                                             <span>
                                                                 <EmojiHappyIcon
                                                                     className="flex-shrink-0 h-5 w-5"

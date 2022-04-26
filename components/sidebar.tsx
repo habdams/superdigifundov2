@@ -46,9 +46,9 @@ export default function Sidebar(props) {
                     </div>
                     <div className="mb-14 overflow-y-auto border bg-stone-100 rounded-lg p-1 w-11/12">
                         {noteList.map((note, index) => (
-                            <>
+                            <div key={index}>
                                 <Notes note={note.note} id={index} />
-                            </>
+                            </div>
                         ))}
                     </div>
                     <div className="self-end w-full">

@@ -46,6 +46,7 @@ export default function PdfViewer(props) {
                     {title}
                 </button>
                 <Modal
+                    ariaHideApp={false}
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
                     contentLabel="Example Modal"

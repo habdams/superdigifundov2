@@ -138,7 +138,7 @@ export const Kalkulation = () => (
                                             id="email"
                                             className="h-9 shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border-gray-300 rounded-md text-right w-40"
                                             placeholder="you@example.com"
-                                            value={value["value"]}
+                                            defaultValue={value["value"]}
                                         />
                                     </div>
                                     <span className="w-16 px-2 font-sans text-sm">

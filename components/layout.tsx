@@ -1,4 +1,3 @@
-import Sidebar from "./sidebar";
 import TopHeader from "./top-header";
 import Footer from "./footer";
 
