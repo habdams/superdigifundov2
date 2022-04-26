@@ -79,7 +79,7 @@ export const BescheideVermerke = () => {
                     </div>
                     <div className="mt-10 justify-center">
                         {documents.map((document, index) => (
-                            <div className="flex flex-col">
+                            <div className="flex flex-col" key={index}>
                                 <div
                                     key={index}
                                     className="bg-gray-50 p-3 px-2 flex items-center justify-evenly gap-1 bg-stone-100 mt-6 flex flex-row rounded"

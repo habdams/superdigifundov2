@@ -109,9 +109,9 @@ export const Verwendungsnachweis = () => {
                     </div>
                     <div>
                         <h3 className='font-bold text-lg mb-8'>Empfangen: </h3>
-                        {keyDates.map((keyDate) => (
+                        {keyDates.map((keyDate, index) => (
 
-                            <div onClick={() => handlePeriodData(keyDate.record, keyDate.month, keyDate.year)} className=' flex py-2 px-4 items-center border border-gray-200 w-4/5 mb-4 justify-between cursor-pointer'>
+                            <div key={index} onClick={() => handlePeriodData(keyDate.record, keyDate.month, keyDate.year)} className=' flex py-2 px-4 items-center border border-gray-200 w-4/5 mb-4 justify-between cursor-pointer'>
                                 <span className='flex items-center gap-x-2'>
                                     <span>{keyDate.year}</span>
                                     <span>{keyDate.month}</span>
