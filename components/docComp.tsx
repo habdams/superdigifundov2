@@ -12,6 +12,7 @@ export default function DocComp(props) {
                         width={35}
                         height={35}
                         className=" flex-1"
+                        alt="pdf logo"
                     />
                     <p className="text-sm font-semibold font-sans text-stone-700 w-1/3">
                         {itemName}
@@ -24,6 +25,7 @@ export default function DocComp(props) {
                         width={20}
                         height={20}
                         className=" flex-1"
+                        alt="blue tag"
                     />
                     <p className="text-sm font-semibold font-sans text-stone-700 w-2/3">
                         nicht geprüft

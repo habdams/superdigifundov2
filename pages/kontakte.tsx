@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import Image from "next/image";
 import Layout from "../components/layout";
 import {
     ArrowNarrowLeftIcon,
@@ -162,7 +163,7 @@ const Kontakte = () => {
                                         <div className="flex items-center py-5 px-4 sm:py-6 sm:px-0">
                                             <div className="min-w-0 flex-1 flex items-center">
                                                 <div className="flex-shrink-0">
-                                                    <img
+                                                    <Image
                                                         className="h-12 w-12 rounded-full group-hover:opacity-75"
                                                         src={candidate.imageUrl}
                                                         alt=""
@@ -301,7 +302,7 @@ const Kontakte = () => {
                             {/* Profile header */}
                             <div>
                                 <div>
-                                    <img
+                                    <Image
                                         className="h-32 w-full object-cover lg:h-48"
                                         src={profile.coverImageUrl}
                                         alt=""
@@ -310,7 +311,7 @@ const Kontakte = () => {
                                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                                     <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                         <div className="flex">
-                                            <img
+                                            <Image
                                                 className="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
                                                 src={profile.imageUrl}
                                                 alt=""
@@ -370,7 +371,7 @@ const Kontakte = () => {
                                             className="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-pink-500"
                                         >
                                             <div className="flex-shrink-0">
-                                                <img
+                                                <Image
                                                     className="h-10 w-10 rounded-full"
                                                     src={person.imageUrl}
                                                     alt=""

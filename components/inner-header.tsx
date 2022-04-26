@@ -99,6 +99,7 @@ export default function InnerHeader() {
                                 <Image
                                     src={searchIcon}
                                     className="px-2 text-gray-800 text-sm items-center "
+                                    alt="search icon"
                                 />
                             </div>
                         </div>
@@ -114,8 +115,8 @@ export default function InnerHeader() {
                                     id="tabs"
                                     name="tabs"
                                     className="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
-                                    // defaultValue={tabs.find((tab) => tab.current).name}
-                                    // onChange={(e)=>{handleCurrentTab(e)}}
+                                // defaultValue={tabs.find((tab) => tab.current).name}
+                                // onChange={(e)=>{handleCurrentTab(e)}}
                                 >
                                     {tabs.map((tab) => (
                                         <option key={tab.name}>

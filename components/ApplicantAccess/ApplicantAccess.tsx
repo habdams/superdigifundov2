@@ -34,7 +34,7 @@ export function ApplicantAccess() {
     return (
         <>
             <div className="flex flex-col justify-center items-center h-screen">
-                <Image src={"/padlock.svg"} height={75} width={75} />
+                <Image src={"/padlock.svg"} height={75} width={75} alt="padlock icon" />
                 <div className="flex flex-col items-center my-10">
                     <h1 className="text-sm p-2 rounded border border-none bg-pink-100 text-pink-600 mb-2">
                         Anwendungs-ID

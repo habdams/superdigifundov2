@@ -42,6 +42,7 @@ export default function NotificationLetter() {
                                 src="/bavarianLogo.png"
                                 width={125}
                                 height={75}
+                                alt="logo"
                             />
                         </div>
                     </div>
