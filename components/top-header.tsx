@@ -36,7 +36,7 @@ export default function TopHeader() {
                                     </div>
                                     <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                         {/* Current: "border-pink-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                                        <Link href="/forderungsantrage">
+                                        <Link href="/forderungsantrage" passHref>
 
                                             <a
                                                 className="border-transparent text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
@@ -45,7 +45,7 @@ export default function TopHeader() {
                                             </a>
                                         </Link>
 
-                                        <Link href="/budgetplanning">
+                                        <Link href="/budgetplanning" passHref>
 
                                             <a
                                                 className="border-transparent text-gray-200 hover:border-gray-100 hover:text-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
@@ -54,7 +54,7 @@ export default function TopHeader() {
                                             </a>
                                         </Link>
 
-                                        <Link href="/kontakte">
+                                        <Link href="/kontakte" passHref>
                                             <a
                                                 className="border-transparent text-gray-200 hover:border-gray-100 hover:text-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                                             >
