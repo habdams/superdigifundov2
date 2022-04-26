@@ -22,16 +22,24 @@ export default function TopHeader() {
                             <div className="flex justify-between h-16">
                                 <div className="flex">
                                     <div className="flex-shrink-0 flex items-center">
-                                        <img
-                                            className="block lg:hidden h-8 w-auto"
-                                            src="./digifundo.png"
-                                            alt="DigiFundo Logo"
-                                        />
-                                        <img
-                                            className="hidden lg:block h-8 w-auto"
-                                            src="./digifundo.png"
-                                            alt="DigiFundo Logo"
-                                        />
+
+                                        <span className="block lg:hidden h-8 w-auto">
+                                            <Image
+                                                src="/digifundo.png"
+                                                alt="DigiFundo Logo"
+                                                width={96}
+                                                height={32}
+                                            />
+                                        </span>
+
+                                        <span className="hidden lg:block h-8 w-auto">
+                                            <Image
+                                                src="/digifundo.png"
+                                                alt="DigiFundo Logo"
+                                                width={96}
+                                                height={32}
+                                            />
+                                        </span>
                                     </div>
                                     <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                         {/* Current: "border-pink-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
